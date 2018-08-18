@@ -8,6 +8,7 @@ Description:    Contains a struct Star as well as an array of Stars called Stars
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include "Stars.h"
 
 #define STAR_MAX_AMOUNT 5
 
