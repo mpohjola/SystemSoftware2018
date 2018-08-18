@@ -17,3 +17,7 @@
 
 /TestFolder
 /TestFolder2
+
+#ignoring IDE stuff
+.idea
+/.idea
