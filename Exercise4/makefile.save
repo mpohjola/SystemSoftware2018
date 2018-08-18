@@ -1,0 +1,19 @@
+CC = gcc
+CFLAGS = -g -Wall -std=c11
+
+default: default
+
+default: Exercise4.o Collatz.o Array.o
+	$(CC) $(CFLAGS) -o default Exercise4.o Collatz.o Array.o
+
+Exercise4.o: Exercise4.c Collatz.h
+	$(CC) $(CFLAGS) -c Exercise4.c
+
+Collatz.o: Collatz.c Collatz.h Array.h
+	$(CC) $(CFLAGS) -c Collatz.c
+
+Array.o: Array.c Array.h
+	$(CC) $(CFLAGS) -c Array.c
+
+clean:
+	$(RM) default *.o *~

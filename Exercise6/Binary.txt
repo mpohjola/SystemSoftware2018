@@ -1,0 +1,11 @@
+Exercise 6 - Learning command line arguments and file write
+
+
+Original Binary: 01101100
+Decimal: 108
+Multiplied decimal: 216
+
+
+Original Binary: 10011101
+Decimal: -99
+Divided decimal: -50
