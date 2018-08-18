@@ -35,7 +35,7 @@ int main() {
     int computerChoice = 0;
     while (rounds <= 3) {
         userInput = doRound(rounds);
-        computerChoice = (rand() % (5 - 1 + 1)) + 1;
+        computerChoice = (rand() % 5) + 1;
         int roundResult = getRoundResult(userInput, computerChoice);
         if (roundResult == 1) {
             userScore++;
@@ -75,6 +75,7 @@ int doRound(int roundNumber) {
             validInput = 1;
         }
     }
+    fflush_stdin();
     return userInput;
 }
 
