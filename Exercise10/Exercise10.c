@@ -1,26 +1,28 @@
 /*
 File:           Exercise10.c
 Author:         Mira Pohjola
-Description:
+Description:    Rock Paper Scissors Lizard Spock with C. In this version, best of three games wins and user plays against computer.
+                The computer selects it's choice randomly and points are calculated for each rounds. If rounds is a tie, the round
+                will be renewed. After three rounds have been completed, the game ends.
 */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-void printMenu();
-
-void printHelp();
-
-void printError();
-
-void printRoundResult(char userInput[], char computerInput[]);
+int doRound(int roundNumber);
 
 void fflush_stdin();
 
 int getRoundResult(int userInput, int computerInput);
 
-int doRound(int roundNumber);
+void printError();
+
+void printHelp();
+
+void printMenu();
+
+void printRoundResult(char userInput[], char computerInput[]);
 
 
 int main() {
@@ -59,14 +61,13 @@ int doRound(int roundNumber) {
         printf("\nRound %d: \n Please choose your action!\n", roundNumber);
         printMenu();
         numberOfItems = scanf("%d", &userInput);
-        if(numberOfItems == EOF) {
+        if (numberOfItems == EOF) {
             fflush_stdin();
             printError();
         } else if (numberOfItems == 0) {
             fflush_stdin();
             printError();
-        }
-        else if (userInput == 0) {
+        } else if (userInput == 0) {
             printHelp();
         } else if (userInput > 5) {
             printError();
@@ -136,7 +137,7 @@ int getRoundResult(int userInput, int computerInput) {
 
         } else if (computerInput == 2) { //paper
             printf("Scissors cuts Paper!\n");
-            printRoundResult("Scissors","Paper");
+            printRoundResult("Scissors", "Paper");
             point++; //user wins
 
         } else if (computerInput == 3) { //scissors
@@ -145,12 +146,12 @@ int getRoundResult(int userInput, int computerInput) {
 
         } else if (computerInput == 4) { //lizard
             printf("Scissors decapitates Lizard!\n");
-            printRoundResult("Scissors","Lizard");
+            printRoundResult("Scissors", "Lizard");
             point++;
 
         } else if (computerInput == 5) { //spock
             printf("Spock smashes Scissors!\n");
-            printRoundResult("Scissors","Spock");
+            printRoundResult("Scissors", "Spock");
             point--;
 
         }
@@ -158,17 +159,17 @@ int getRoundResult(int userInput, int computerInput) {
     } else if (userInput == 4) { //lizard
         if (computerInput == 1) { //rock
             printf("Rock crushes Lizard!\n");
-            printRoundResult("Lizard","Rock");
+            printRoundResult("Lizard", "Rock");
             point--;
 
         } else if (computerInput == 2) { //paper
             printf("Lizard eats Paper!\n");
-            printRoundResult("Lizard","Paper");
+            printRoundResult("Lizard", "Paper");
             point++;
 
         } else if (computerInput == 3) { //scissors
             printf("Scissors decapitates Lizard!\n");
-            printRoundResult("Lizard","Scissors");
+            printRoundResult("Lizard", "Scissors");
             point--;
 
         } else if (computerInput == 4) { //lizard
@@ -177,7 +178,7 @@ int getRoundResult(int userInput, int computerInput) {
 
         } else if (computerInput == 5) { //spock
             printf("Lizard poisons Spock!\n");
-            printRoundResult("Lizard","Spock");
+            printRoundResult("Lizard", "Spock");
             point++;
 
         }
@@ -185,22 +186,22 @@ int getRoundResult(int userInput, int computerInput) {
     } else if (userInput == 5) { //spock
         if (computerInput == 1) { //rock
             printf("Spock vaporizes Rock!\n");
-            printRoundResult("Spock","Rock");
+            printRoundResult("Spock", "Rock");
             point++;
 
         } else if (computerInput == 2) { //paper
             printf("Paper disqualifies Spock!\n");
-            printRoundResult("Spock","Paper");
+            printRoundResult("Spock", "Paper");
             point--;
 
         } else if (computerInput == 3) { //scissors
             printf("Spock smashes Scissors!\n");
-            printRoundResult("Spock","Scissors");
+            printRoundResult("Spock", "Scissors");
             point++;
 
         } else if (computerInput == 4) { //lizard
             printf("Lizard poisons Spock!\n");
-            printRoundResult("Spock","Lizard");
+            printRoundResult("Spock", "Lizard");
             point--;
 
         } else if (computerInput == 5) { //spock
@@ -212,15 +213,8 @@ int getRoundResult(int userInput, int computerInput) {
     return point;
 }
 
-void printMenu() {
-    printf("\n********************************\n");
-    printf("0 = help\n\n");
-    printf("1 = rock\n");
-    printf("2 = paper\n");
-    printf("3 = scissors\n");
-    printf("4 = lizard\n");
-    printf("5 = spock\n");
-    printf("\n********************************\n");
+void printError() {
+    printf("Invalid input detected. :( ");
 }
 
 void printHelp() {
@@ -240,8 +234,15 @@ void printHelp() {
     printf("\nBest out of three games wins. Good luck!\n");
 }
 
-void printError() {
-    printf("Invalid input detected. :( ");
+void printMenu() {
+    printf("\n********************************\n");
+    printf("0 = help\n\n");
+    printf("1 = rock\n");
+    printf("2 = paper\n");
+    printf("3 = scissors\n");
+    printf("4 = lizard\n");
+    printf("5 = spock\n");
+    printf("\n********************************\n");
 }
 
 void printRoundResult(char userInput[], char computerInput[]) {
