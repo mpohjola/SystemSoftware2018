@@ -214,7 +214,7 @@ int getRoundResult(int userInput, int computerInput) {
 }
 
 void printError() {
-    printf("Invalid input detected. :( ");
+    printf("\nInvalid input detected. Please choose one of the input options in the menu!\n");
 }
 
 void printHelp() {
@@ -236,12 +236,12 @@ void printHelp() {
 
 void printMenu() {
     printf("\n********************************\n");
-    printf("0 = help\n\n");
-    printf("1 = rock\n");
-    printf("2 = paper\n");
-    printf("3 = scissors\n");
-    printf("4 = lizard\n");
-    printf("5 = spock\n");
+    printf("0 = Help\n\n");
+    printf("1 = Rock\n");
+    printf("2 = Paper\n");
+    printf("3 = Scissors\n");
+    printf("4 = Lizard\n");
+    printf("5 = Spock\n");
     printf("\n********************************\n");
 }
 
