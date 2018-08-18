@@ -19,10 +19,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Exercise8.c" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Exercise8.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Exercise8/Exercise8.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-375">
+            <state relative-caret-position="120">
               <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="18" />
             </state>
           </provider>
@@ -46,16 +46,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Exercise9.c" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Exercise9.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Exercise9/Exercise9.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-140">
+            <state relative-caret-position="330">
               <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -94,6 +97,7 @@
     <option name="width" value="1400" />
     <option name="height" value="900" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -158,12 +162,12 @@
       <updated>1526809887900</updated>
       <workItem from="1526809890428" duration="25749000" />
       <workItem from="1529661938219" duration="48461000" />
-      <workItem from="1532183211172" duration="9967000" />
+      <workItem from="1532183211172" duration="10366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84177000" />
+    <option name="totallyTimeSpent" value="84576000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="473" y="0" width="1400" height="900" extended-state="0" />
@@ -171,8 +175,8 @@
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1702432" />
       <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" visible="true" weight="0.14520203" />
-      <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" visible="true" weight="0.14556962" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Run" order="5" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
@@ -355,17 +359,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Exercise8/Exercise8.c">
+    <entry file="file://$PROJECT_DIR$/Exercise9/Exercise9.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375">
-          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="18" />
+        <state relative-caret-position="330">
+          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Exercise9/Exercise9.c">
+    <entry file="file://$PROJECT_DIR$/Exercise8/Exercise8.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140">
-          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="18" />
         </state>
       </provider>
     </entry>
