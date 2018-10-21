@@ -50,6 +50,7 @@ int main() {
     printf("\n********************************\n");
     printf("Game ends with:\nUser score: %d \nComputer score: %d\n", userScore, computerScore);
     printf("\n********************************\n");
+    return 0;
 
 }
 
